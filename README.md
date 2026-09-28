@@ -5,6 +5,21 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## API documentation
+
+Start the application and open [http://localhost:3000/api](http://localhost:3000/api) for the interactive Swagger UI. The OpenAPI JSON document is available at `http://localhost:3000/api-json`.
+
+### Endpoints
+
+| Method | Path | Description | Request body |
+| --- | --- | --- | --- |
+| GET | `/` | Get the project welcome link. | None |
+| GET | `/products` | List all products. | None |
+| GET | `/products/{id}` | Get a product by ID. Returns 404 when it does not exist. | None |
+| POST | `/products` | Create a product. | `{"name":"Notebook","price":12.5}` |
+| POST | `/users` | Create a user. | `{"name":"Ada Lovelace"}` |
+| POST | `/orders` | Create an order. Returns 404 when the user or product does not exist. | `{"userId":1,"productId":1}` |
+
 ## Project setup
 
 ```bash
